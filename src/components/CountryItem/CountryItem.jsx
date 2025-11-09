@@ -3,7 +3,7 @@ import React from 'react';
 // A presentational component for a single country in the list.
 const CountryItem = ({ country, isSelected, onSelect }) => {
   // Construct the path to the flag image in the public folder.
-  const flagPath = `public/flags/${country.flag}`;
+  const flagPath = `flags/${country.flag}`;
 
   // Dynamically set CSS classes based on the `isSelected` prop.
   const itemClasses = `

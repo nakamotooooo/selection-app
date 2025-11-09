@@ -33,7 +33,7 @@ function App() {
             <div className="flex items-center gap-4">
               <img
                 // The path logic is the same as in CountryItem.js
-                src={`public/flags/${selectedCountry.flag}`}
+                src={`flags/${selectedCountry.flag}`}
                 alt={`${selectedCountry.name} flag`}
                 className="w-12 h-auto rounded-md shadow-sm"
               />
