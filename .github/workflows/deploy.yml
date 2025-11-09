@@ -41,13 +41,16 @@ jobs:
         env:
           CI: false  # Treats warnings as warnings, not errors
 
+      - name: List build output (debug)
+        run: ls -la
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './build'  # Change to 'dist' if using Vite
+          path: './dist'  # Use 'build' for Create React App, 'dist' for Vite
 
   deploy:
     environment:
